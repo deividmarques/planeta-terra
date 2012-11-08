@@ -1,0 +1,33 @@
+body{
+	background: url(img/espaco.jpg) no-repeat 0 0;
+	background-size: 100%;
+}
+.earth{
+	background: url(img/terra.jpg) repeat-x 0 0;
+	border: 1px solid rgba(26,18,101,0.3);
+	border-radius: 225px;
+	box-shadow: -8px 0 25px rgba(256,256,256,0.3), -1px -2px 14px rgba(256,256,256,0.5) inset;
+	height: 450px;
+	left: 50%;
+	margin: -225px 0 0 -225px;
+	position: absolute;
+	top: 50%;
+	width: 450px;
+	-webkit-animation: loop 80s linear infinite;
+
+}
+@-webkit-keyframes loop {
+    0% { background-position: 0 0; }
+	100%{ background-position: -900px 0;}
+
+}
+.earth:before{
+	content: "";
+	border-radius: 225px;
+	box-shadow: -150px -6px 25px rgba(0,0,0,0.7) inset;
+	left: 0;
+	position:absolute;
+	top: 0;
+	height: 450px;
+	width: 450px;
+}
