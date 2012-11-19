@@ -14,9 +14,21 @@ body{
 	top: 50%;
 	width: 450px;
 	-webkit-animation: loop 80s linear infinite;
+	animation: loop 80s linear infinite;
+	-moz-animation: loop 80s linear infinite;
 
 }
 @-webkit-keyframes loop {
+    0% { background-position: 0 0; }
+	100%{ background-position: -900px 0;}
+
+}
+@-moz-keyframes loop {
+    0% { background-position: 0 0; }
+	100%{ background-position: -900px 0;}
+
+}
+@keyframes loop {
     0% { background-position: 0 0; }
 	100%{ background-position: -900px 0;}
 
